@@ -124,10 +124,12 @@
     
 }
 #screen3 h1{
+    cursor: default;
     padding-bottom: 21px;
     font-weight: 400; 
 }
 #screen3 h2{
+    cursor: default;
     font-weight: 300;
 }
 .contact{
@@ -140,7 +142,7 @@ textarea{
     display: block;
     margin: 10px auto 0;
     width: 460px;
-    border: 2px solid #c8c8c8;
+    border: 1px solid #22222;
 }
 input[type="text"],input[type="email"]{
     box-sizing: border-box;
@@ -150,11 +152,15 @@ input[type="text"],input[type="email"]{
     padding: 10px;
 }
 input[type="submit"]{
+    outline: none;
+    box-shadow: none;
     color: #222;
-    margin-top: 10px;
-    background: transparent;
-    border: 2px solid #41375b;
+    box-shadow: none;
+    background: #fff;
+    border: none;
+    border-top: 1px solid #41375b;
     width: 460px;
+    border: 1px solid #22222;
     height: 28p;
     font-size: 15pt;
 }
