@@ -38,7 +38,7 @@
     margin: 33px 0 0 0;
 }
 #screen1 h2{
-    font-size: 22pt;
+    font-size: 35pt;
     font-weight: 300;
 }
 #screen1 button{
@@ -134,6 +134,8 @@
     margin-top: 91px;
 }
 textarea{
+    box-sizing: border-box;
+    padding: 10px;
     resize: none;
     display: block;
     margin: 10px auto 0;
@@ -141,14 +143,16 @@ textarea{
     border: 2px solid #c8c8c8;
 }
 input[type="text"],input[type="email"]{
-    border: 2px solid #c8c8c8;
-    width: 217px;
-    height: 28px;
+    box-sizing: border-box;
+    border: 1px solid #22222;
+    width: 218px;
+    height: 30px;
+    padding: 10px;
 }
 input[type="submit"]{
     color: #222;
     margin-top: 10px;
-    background: #fff;
+    background: transparent;
     border: 2px solid #41375b;
     width: 460px;
     height: 28p;
@@ -161,3 +165,6 @@ input[type="submit"]:hover{
 input[type="text"]{
     margin-right: 20px;
 }
+::-webkit-input-placeholder {
+    
+    }
