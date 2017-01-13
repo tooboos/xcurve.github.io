@@ -10,6 +10,7 @@
                     <body>
                         <p>Имя: '.$_POST['name'].'</p>
                         <p>E-mail: '.$_POST['email'].'</p>
+                        <p>Сообзение: '$_POST['Massage'].'</p>
                     </body>
                 </html>'; //Текст нащего сообщения можно использовать HTML теги
     $headers  = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма

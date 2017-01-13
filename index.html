@@ -57,7 +57,7 @@
         <h2>MENU LAYOUT</h2>
         <h2>WEB DESIGN</h2>
         <h1 class="contact">CONTACT US</h1>
-        <form action="send.php" method="post">
+        <form id="form">
             <input type="text" id="name" name="name" required placeholder="Name">
             <input type="email" name="email" required placeholder="E-mail">
             <textarea name="Massage" id="massage-field" placeholder="Massage" rows="8"></textarea>
@@ -85,6 +85,21 @@
             , autoplay: true
             , autoplaySpeed: 2000
         , });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+                    $("#form").submit(function () { //устанавливаем событие отправки для формы с id=form
+                            var form_data = $(this).serialize(); //собераем все данные из формы
+                            $.ajax({
+                                    type: "POST", //Метод отправки
+                                    url: "send.php", //путь до php фаила отправителя
+                                    data: form_data
+                                    , success: function () {
+                                        //код в этом блоке выполняется при успешной отправке сообщения
+                                        alert("Ваше сообщение отпрвлено!");
+                                    });
+                            });
+                    });
     </script>
 </body>
 
