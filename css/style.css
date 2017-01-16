@@ -24,7 +24,7 @@
     padding-top: 170px;
 }
 .logo img{
-    max-width: 100%;
+    max-width: 30%;
     height: auto;
     margin: 0 auto;
 }
@@ -38,7 +38,7 @@
     margin: 33px 0 0 0;
 }
 #screen1 h2{
-    font-size: 35pt;
+    font-size: 23pt;
     font-weight: 300;
 }
 #screen1 button{
