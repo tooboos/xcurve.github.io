@@ -9,8 +9,8 @@
     <link type="text/css" href="css/style.css" rel="stylesheet"> </head>
 
 <body>
-    <video autoplay  loop="loop" muted class="bgvideo" id="bgvideo" poster="img/bgimg.jpg">
-        <source src="shutterstock.mov" type="video/mp4"></source>
+    <video autoplay  loop="loop" muted class="bgvideo" id="bgvideo" poster=".img/bgimg.jpg">
+        <source src="/img/bgvideo.mp4" type="video/mp4"></source>
     </video>
     <section class=screen id=screen1>
         <div class="logo"><img src="./img/logo1.png" alt="logo"></div>
@@ -57,11 +57,12 @@
         <h2>MENU LAYOUT</h2>
         <h2>WEB DESIGN</h2>
         <h1 class="contact">CONTACT US</h1>
-        <form id="form">
+        <form action="send.php" method="get">
             <input type="text" id="name" name="name" required placeholder="Name">
             <input type="email" name="email" required placeholder="E-mail">
-            <textarea name="Massage" id="massage-field" placeholder="Massage" rows="8"></textarea>
-            <input type="submit" name="submit" value="SAND MASSAGE"> </form>
+            <textarea type="text" name="massage" id="massage-field" placeholder="Massage" rows="8"></textarea>
+            <input type="submit" name="submit" value="SAND MASSAGE"> 
+        </form>
     </section>
     <script src="js/scrollspy.js"></script>
     <script src="js/timings.js"></script>
@@ -85,21 +86,6 @@
             , autoplay: true
             , autoplaySpeed: 2000
         , });
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-                    $("#form").submit(function () { //устанавливаем событие отправки для формы с id=form
-                            var form_data = $(this).serialize(); //собераем все данные из формы
-                            $.ajax({
-                                    type: "POST", //Метод отправки
-                                    url: "send.php", //путь до php фаила отправителя
-                                    data: form_data
-                                    , success: function () {
-                                        //код в этом блоке выполняется при успешной отправке сообщения
-                                        alert("Ваше сообщение отпрвлено!");
-                                    });
-                            });
-                    });
     </script>
 </body>
 

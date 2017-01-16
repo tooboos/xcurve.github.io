@@ -1,6 +1,6 @@
 <?
     $to = 'tooboos123@gmail.com'; //Почта получателя, через запятую можно указать сколько угодно адресов
-    $subject = 'Обратный звонок'; //Загаловок сообщения
+    $subject = 'Сообщение с сайта'; //Загаловок сообщения
     $message =         
         '
                 <html>
@@ -8,9 +8,9 @@
                         <title>'.$subject.'</title>
                     </head>
                     <body>
-                        <p>Имя: '.$_POST['name'].'</p>
-                        <p>E-mail: '.$_POST['email'].'</p>
-                        <p>Сообзение: '$_POST['Massage'].'</p>
+                        <p>Имя: '.$_GET['name'].'</p>
+                        <p>E-mail: '.$_GET['email'].'</p>
+                        <p>Сообщение: '.$_GET['massage'].'</p> 
                     </body>
                 </html>'; //Текст нащего сообщения можно использовать HTML теги
     $headers  = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
