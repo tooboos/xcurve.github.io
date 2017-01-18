@@ -8,9 +8,9 @@
                         <title>'.$subject.'</title>
                     </head>
                     <body>
-                        <p>Имя: '.$_GET['name'].'</p>
-                        <p>E-mail: '.$_GET['email'].'</p>
-                        <p>Сообщение: '.$_GET['massage'].'</p> 
+                        <p>Имя: '.$_POST['name'].'</p>
+                        <p>E-mail: '.$_POST['email'].'</p>
+                        <p>Сообщение: '.$_POST['massage'].'</p> 
                     </body>
                 </html>'; //Текст нащего сообщения можно использовать HTML теги
     $headers  = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма

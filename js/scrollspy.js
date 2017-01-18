@@ -2,7 +2,6 @@
 var btn = document.querySelector('button');
         btn.addEventListener('click', function(){
         var y =  document.querySelector('#screen2').offsetTop;
-        console.log(y);
              animate({
                 duration: 2000,
                 timing: easeOutOct,

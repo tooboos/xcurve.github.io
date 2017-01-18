@@ -66,9 +66,9 @@
     vertical-align: middle;
 }
 #screen2{
+    padding-top: 5vh;
     margin: 0 auto;
     text-align: center;
-    padding-top: 58px;
 }
 .active{
     border-bottom: 2px solid #222;
@@ -88,14 +88,13 @@
     margin-left: 20px;
 }
 #screen2 h2:hover{
-    border-bottom: 2px solid #222;
+    border-bottom: 2px solid #222222;
 }
-
 .slick-slide img {
     width: 100%; 
 }
 .slider {
-    width: 65%;
+    width: 75%;
     margin: 25px auto;
 }
 .slick-slide {
@@ -105,16 +104,11 @@
 
 }
 .slider-dsc{
+    display: none;
     text-transform:uppercase;
     width: 300px;
     text-align: center;
     margin: 0 auto;
-}
-.design{
-    display: block;
-}
-.illustrations{
-    display: none;
 }
 #screen3{
     background: rgba(255,255,255,0.7);
@@ -143,6 +137,7 @@ textarea{
     margin: 10px auto 0;
     width: 460px;
     border: 1px solid #22222;
+    border-bottom: none;
 }
 input[type="text"],input[type="email"]{
     box-sizing: border-box;
@@ -153,16 +148,15 @@ input[type="text"],input[type="email"]{
 }
 input[type="submit"]{
     outline: none;
-    box-shadow: none;
     color: #222;
     box-shadow: none;
     background: #fff;
     border: none;
-    border-top: 1px solid #41375b;
     width: 460px;
-    border: 1px solid #22222;
     height: 28p;
     font-size: 15pt;
+    border: 1px solid #22222;
+    
 }
 input[type="submit"]:hover{
     background: #41375b;
@@ -171,6 +165,22 @@ input[type="submit"]:hover{
 input[type="text"]{
     margin-right: 20px;
 }
-::-webkit-input-placeholder {
-    
-    }
+footer{
+    background: rgba(255,255,255,0.7);
+    vertical-align: middle;
+    text-align: center;
+    height: 10vh;
+    width: auto;
+}
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: darkgrey;
+}
+footer li{
+display: inline-block;
+}
+footer img{
+    color:red;
+    width: 85%;
+}
