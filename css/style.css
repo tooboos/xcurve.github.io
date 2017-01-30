@@ -183,28 +183,28 @@ height: 50px;
 display: inline-block;
 }
 .social-vk{
-    background: url("/img/social.png") no-repeat -81px 0;
+    background: url("./img/social.png") no-repeat -81px 0;
 }
 .social-fb{
-    background: url("/img/social.png") no-repeat -26px 0;
+    background: url("./img/social.png") no-repeat -26px 0;
 }
 .social-inst{
-    background: url("/img/social.png") no-repeat -196px 0;
+    background: url("./img/social.png") no-repeat -196px 0;
 }
 .social-bh{
-    background: url("/img/social.png") no-repeat -140px 0;
+    background: url("./img/social.png") no-repeat -140px 0;
 }
 .social-vk:hover{
-    background: url("/img/socialh.png") no-repeat -81px 0;
+    background: url("./img/socialh.png") no-repeat -81px 0;
 }
 .social-fb:hover{
-    background: url("/img/socialh.png") no-repeat -26px 0;
+    background: url("./img/socialh.png") no-repeat -26px 0;
 }
 .social-inst:hover{
-    background: url("/img/socialh.png") no-repeat -196px 0;
+    background: url("./img/socialh.png") no-repeat -196px 0;
 }
 .social-bh:hover{
-    background: url("/img/socialh.png") no-repeat -142px 0;
+    background: url("./img/socialh.png") no-repeat -142px 0;
 }
 
 
